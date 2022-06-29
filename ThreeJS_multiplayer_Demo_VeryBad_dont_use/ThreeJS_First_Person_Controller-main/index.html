@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>world</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="base.css">
+</head>
+
+<body>
+  <div id="text-container">
+    <div id="controls">
+      <h1>Controls</h1>
+      <p>W,A,S,D: Move<br>
+        Space: Jump<br>
+        Click to start
+      </p>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyC8LDDbfnkPfwCy2uG5Um_sG8CtVLUT5GE",
+      authDomain: "multiplayer-threejs-868fb.firebaseapp.com",
+      projectId: "multiplayer-threejs-868fb",
+      storageBucket: "multiplayer-threejs-868fb.appspot.com",
+      messagingSenderId: "652332942502",
+      appId: "1:652332942502:web:49c09d1a14a4f8898e6067"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
